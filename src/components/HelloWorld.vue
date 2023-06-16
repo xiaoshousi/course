@@ -36,7 +36,7 @@ export default {
          withCredentials: false,
         }).then((res)=>{
         //请求成功的回调函数
-        console.log(res)
+        this.items=res.data
       }).catch((err)=>{
         //请求失败的回调函数
         console.log(err)
